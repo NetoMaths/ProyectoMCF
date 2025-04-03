@@ -324,30 +324,30 @@ if stock_seleccionado:
         return pd.DataFrame(hCVaR_list, index=returns.index)
     
     # Var y CVar al 95
-    NVDA_var_param_95 = rolling_var_param(df_rendimientos)
-    NVDA_cvar_param_95 = rolling_cvar_param(df_rendimientos)
+    liv_var_param_95 = rolling_var_param(df_rendimientos)
+    liv_cvar_param_95 = rolling_cvar_param(df_rendimientos)
 
     # Var y CVar al 99
-    NVDA_var_param_99 = rolling_var_param(df_rendimientos, alpha=0.99)
-    NVDA_cvar_param_99 = rolling_cvar_param(df_rendimientos, alpha=0.99)
+    liv_var_param_99 = rolling_var_param(df_rendimientos, alpha=0.99)
+    liv_cvar_param_99 = rolling_cvar_param(df_rendimientos, alpha=0.99)
 
     # Var y CVar historico al 95
-    NVDA_var_hist_95 = rolling_var_hist(df_rendimientos)
-    NVDA_cvar_hist_95 = rolling_cvar_hist(df_rendimientos)
+    liv_var_hist_95 = rolling_var_hist(df_rendimientos)
+    liv_cvar_hist_95 = rolling_cvar_hist(df_rendimientos)
 
     # Var y CVar historico al 99
-    NVDA_var_hist_99 = rolling_var_hist(df_rendimientos, alpha=0.99)
-    NVDA_cvar_hist_99 = rolling_cvar_hist(df_rendimientos, alpha=0.99)
+    liv_var_hist_99 = rolling_var_hist(df_rendimientos, alpha=0.99)
+    liv_cvar_hist_99 = rolling_cvar_hist(df_rendimientos, alpha=0.99)
 
     # Asegúrate de haber hecho el desplazamiento de un día
-    NVDA_var_param_95_1 = NVDA_var_param_95.shift(1)
-    NVDA_var_param_99_1 = NVDA_var_param_99.shift(1)
-    NVDA_var_hist_95_1 = NVDA_var_hist_95.shift(1)
-    NVDA_var_hist_99_1 = NVDA_var_hist_99.shift(1)
-    NVDA_cvar_param_95_1 = NVDA_cvar_param_95.shift(1)
-    NVDA_cvar_param_99_1 = NVDA_cvar_param_99.shift(1)
-    NVDA_cvar_hist_95_1 = NVDA_cvar_hist_95.shift(1)
-    NVDA_cvar_hist_99_1 = NVDA_cvar_hist_99.shift(1)
+    liv_var_param_95_1 = NVDA_var_param_95.shift(1)
+    liv_var_param_99_1 = NVDA_var_param_99.shift(1)
+    liv_var_hist_95_1 = NVDA_var_hist_95.shift(1)
+    liv_var_hist_99_1 = NVDA_var_hist_99.shift(1)
+    liv_cvar_param_95_1 = NVDA_cvar_param_95.shift(1)
+    liv_cvar_param_99_1 = NVDA_cvar_param_99.shift(1)
+    liv_cvar_hist_95_1 = NVDA_cvar_hist_95.shift(1)
+    liv_cvar_hist_99_1 = NVDA_cvar_hist_99.shift(1)
 
     st.subheader("Análisis de VaR y CVaR mediante ventanas moviles a 95% y 99% de Confianza")
 
@@ -430,7 +430,7 @@ if stock_seleccionado:
 
 
 
-    df = yf.download('NVDA', start='2010-01-01')['Close']
+    df = yf.download('LIVEPOLC-1.MX', start='2010-01-01')['Close']
     returns = df.pct_change().dropna()
     returns
 
