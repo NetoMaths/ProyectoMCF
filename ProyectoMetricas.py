@@ -394,14 +394,14 @@ if stock_seleccionado:
 
         return violaciones_risk, porcentaje_violaciones_risk
     # Calcular violaciones y porcentajes para los VaR y CVaR
-    violaciones_var_param_95, porcentaje_var_param_95 = eficiencia_estimacion(df_rendimientos, NVDA_var_param_95)
-    violaciones_cvar_param_95, porcentaje_cvar_param_95 = eficiencia_estimacion(df_rendimientos, NVDA_cvar_param_95)
+    violaciones_var_param_95, porcentaje_var_param_95 = eficiencia_estimacion(df_rendimientos, liv_var_param_95)
+    violaciones_cvar_param_95, porcentaje_cvar_param_95 = eficiencia_estimacion(df_rendimientos, liv_cvar_param_95)
 
-    violaciones_var_param_99, porcentaje_var_param_99 = eficiencia_estimacion(df_rendimientos, NVDA_var_param_99)
-    violaciones_cvar_param_99, porcentaje_cvar_param_99 = eficiencia_estimacion(df_rendimientos, NVDA_cvar_param_99)
+    violaciones_var_param_99, porcentaje_var_param_99 = eficiencia_estimacion(df_rendimientos, liv_var_param_99)
+    violaciones_cvar_param_99, porcentaje_cvar_param_99 = eficiencia_estimacion(df_rendimientos, liv_cvar_param_99)
 
-    violaciones_var_hist_95, porcentaje_var_hist_95 = eficiencia_estimacion(df_rendimientos, NVDA_var_hist_95)
-    violaciones_cvar_hist_95, porcentaje_cvar_hist_95 = eficiencia_estimacion(df_rendimientos, NVDA_cvar_hist_95)
+    violaciones_var_hist_95, porcentaje_var_hist_95 = eficiencia_estimacion(df_rendimientos, liv_var_hist_95)
+    violaciones_cvar_hist_95, porcentaje_cvar_hist_95 = eficiencia_estimacion(df_rendimientos, liv_cvar_hist_95)
 
     violaciones_var_hist_99, porcentaje_var_hist_99 = eficiencia_estimacion(df_rendimientos, NVDA_var_hist_99)
     violaciones_cvar_hist_99, porcentaje_cvar_hist_99 = eficiencia_estimacion(df_rendimientos, NVDA_cvar_hist_99)
