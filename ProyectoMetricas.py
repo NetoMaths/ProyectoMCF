@@ -68,7 +68,6 @@ if stock_seleccionado:
     stat, p = shapiro(df_rendimientos[stock_seleccionado])
 
     st.write(f"**Shapiro-Wilk Test Statistic:** {stat:.4f}")
-    st.write(f"**P-value:** {p:.4f}")
 
     # Interpretación del test
     alpha = 0.05
