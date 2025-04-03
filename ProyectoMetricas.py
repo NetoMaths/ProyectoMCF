@@ -340,14 +340,14 @@ if stock_seleccionado:
     liv_cvar_hist_99 = rolling_cvar_hist(df_rendimientos, alpha=0.99)
 
     # Asegúrate de haber hecho el desplazamiento de un día
-    liv_var_param_95_1 = NVDA_var_param_95.shift(1)
-    liv_var_param_99_1 = NVDA_var_param_99.shift(1)
-    liv_var_hist_95_1 = NVDA_var_hist_95.shift(1)
-    liv_var_hist_99_1 = NVDA_var_hist_99.shift(1)
-    liv_cvar_param_95_1 = NVDA_cvar_param_95.shift(1)
-    liv_cvar_param_99_1 = NVDA_cvar_param_99.shift(1)
-    liv_cvar_hist_95_1 = NVDA_cvar_hist_95.shift(1)
-    liv_cvar_hist_99_1 = NVDA_cvar_hist_99.shift(1)
+    liv_var_param_95_1 = liv_var_param_95.shift(1)
+    liv_var_param_99_1 = liv_var_param_99.shift(1)
+    liv_var_hist_95_1 = liv_var_hist_95.shift(1)
+    liv_var_hist_99_1 = liv_var_hist_99.shift(1)
+    liv_cvar_param_95_1 = liv_cvar_param_95.shift(1)
+    liv_cvar_param_99_1 = liv_cvar_param_99.shift(1)
+    liv_cvar_hist_95_1 = liv_cvar_hist_95.shift(1)
+    liv_cvar_hist_99_1 = liv_cvar_hist_99.shift(1)
 
     st.subheader("Análisis de VaR y CVaR mediante ventanas moviles a 95% y 99% de Confianza")
 
