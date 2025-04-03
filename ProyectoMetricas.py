@@ -357,14 +357,14 @@ if stock_seleccionado:
 
     # Graficar los rendimientos
     ax.plot(df_rendimientos[stock_seleccionado], label="Rendimientos", color="blue", alpha=0.6)
-    ax.plot(NVDA_var_param_95_1, label="VaR paramétrico 95%", color="red", linestyle="dashed")
-    ax.plot(NVDA_var_param_99_1, label="VaR paramétrico 99%", color="yellow", linestyle="dashed")
-    ax.plot(NVDA_var_hist_95_1, label="VaR histórico 95%", color="green", linestyle="dashed")
-    ax.plot(NVDA_var_hist_99_1, label="VaR histórico 99%", color="orange", linestyle="dashed")
-    ax.plot(NVDA_cvar_param_95_1, label="CVaR paramétrico 95%", color="cyan", linestyle="dotted")
-    ax.plot(NVDA_cvar_param_99_1, label="CVaR paramétrico 99%", color="purple", linestyle="dotted")
-    ax.plot(NVDA_cvar_hist_95_1, label="CVaR histórico 95%", color="pink", linestyle="dotted")
-    ax.plot(NVDA_cvar_hist_99_1, label="CVaR histórico 99%", color="lightblue", linestyle="dotted")
+    ax.plot(liv_var_param_95_1, label="VaR paramétrico 95%", color="red", linestyle="dashed")
+    ax.plot(liv_var_param_99_1, label="VaR paramétrico 99%", color="yellow", linestyle="dashed")
+    ax.plot(liv_var_hist_95_1, label="VaR histórico 95%", color="green", linestyle="dashed")
+    ax.plot(liv_var_hist_99_1, label="VaR histórico 99%", color="orange", linestyle="dashed")
+    ax.plot(liv_cvar_param_95_1, label="CVaR paramétrico 95%", color="cyan", linestyle="dotted")
+    ax.plot(liv_cvar_param_99_1, label="CVaR paramétrico 99%", color="purple", linestyle="dotted")
+    ax.plot(liv_cvar_hist_95_1, label="CVaR histórico 95%", color="pink", linestyle="dotted")
+    ax.plot(liv_cvar_hist_99_1, label="CVaR histórico 99%", color="lightblue", linestyle="dotted")
 
     # Mejorar la visualización
     ax.axhline(0, color="black", linewidth=0.8, linestyle="--")  # Línea en cero
