@@ -403,8 +403,8 @@ if stock_seleccionado:
     violaciones_var_hist_95, porcentaje_var_hist_95 = eficiencia_estimacion(df_rendimientos, liv_var_hist_95)
     violaciones_cvar_hist_95, porcentaje_cvar_hist_95 = eficiencia_estimacion(df_rendimientos, liv_cvar_hist_95)
 
-    violaciones_var_hist_99, porcentaje_var_hist_99 = eficiencia_estimacion(df_rendimientos, NVDA_var_hist_99)
-    violaciones_cvar_hist_99, porcentaje_cvar_hist_99 = eficiencia_estimacion(df_rendimientos, NVDA_cvar_hist_99)
+    violaciones_var_hist_99, porcentaje_var_hist_99 = eficiencia_estimacion(df_rendimientos, liv_var_hist_99)
+    violaciones_cvar_hist_99, porcentaje_cvar_hist_99 = eficiencia_estimacion(df_rendimientos, liv_cvar_hist_99)
 
    # Crear un DataFrame con los resultados sin los índices
     resultados = pd.DataFrame({
